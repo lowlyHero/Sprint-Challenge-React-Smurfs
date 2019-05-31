@@ -4,6 +4,7 @@ import { Router, Route } from 'react-router-dom';
 
 import SmurfForm from './components/SmurfForm';
 import Smurfs from './components/Smurfs';
+import NavBar from './components/NavBar';
 
 import './App.css';
 
@@ -33,6 +34,7 @@ allSmurfs = () => {
   render() {
     return (
       <div className="App">
+        <Route path='/' component={NavBar} />
         <Route path='/smurfs' render={props => {
           return (
             <div>
