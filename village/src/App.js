@@ -38,8 +38,8 @@ allSmurfs = () => {
         <Route path='/smurfs' render={props => {
           return (
             <div>
-        <SmurfForm {...props} addSmurf={this.addSmurf} />
         <Smurfs {...props} smurfs={this.state.smurfs} />
+        <SmurfForm {...props} addSmurf={this.addSmurf} />
             </div>
           )
         }}
